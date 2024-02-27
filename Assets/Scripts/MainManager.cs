@@ -8,7 +8,7 @@ public class MainManager : MonoBehaviour
     /* this code creates a static member to the MainManager class */
     /* Static class member declaration: values stored in this class member will be shared by all the instances of that class.
     For example, if there were ten instances of MainManager in your scene, they would all share the same value stored in Instance. */
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
 
     public Color TeamColor;
 
